@@ -1,0 +1,14 @@
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\bin\Debug\netstandard2.0\Sails.Remoting.Abstractions.deps.json
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\bin\Debug\netstandard2.0\Sails.Remoting.Abstractions.dll
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\bin\Debug\netstandard2.0\Sails.Remoting.Abstractions.pdb
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\bin\Debug\netstandard2.0\Substrate.Gear.Api.dll
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\bin\Debug\netstandard2.0\Substrate.Gear.Api.pdb
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.csproj.AssemblyReference.cache
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.AssemblyInfoInputs.cache
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.AssemblyInfo.cs
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.sourcelink.json
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Re.73D0FC37.Up2Date
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.dll
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Sails.Remoting.Abstractions\obj\Debug\netstandard2.0\Sails.Remoting.Abstractions.pdb

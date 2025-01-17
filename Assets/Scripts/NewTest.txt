@@ -1,0 +1,130 @@
+using UnityEngine;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Linq;
+using Substrate.Gear.Api.Generated.Model.gprimitives;
+using Substrate.NetApi.Model.Types.Primitive;
+using Sails.Remoting.Abstractions.Core;
+using Sails.Remoting.Core;
+using Sails.Remoting;
+using UnityEngine;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using Substrate.NetApi;
+using Substrate.NetApi.Model.Extrinsics;
+using Substrate.NetApi.Model.Types.Primitive;
+using Substrate.Gear.Api.Generated.Storage;
+using Substrate.Gear.Api.Generated.Model.sp_core.crypto;
+using Substrate.Gear.Api.Generated.Model.frame_system;
+using Substrate.Gear.Api.Generated.Model.gprimitives;
+using Sails.Remoting.Abstractions.Core;
+using Sails.Remoting.Core;
+using Sails.Remoting.Abstractions;
+using System.Collections.Generic;
+using System.Linq;
+using Sails.Remoting.Exceptions;
+using Substrate.Gear.Api.Generated.Model.gear_core_errors.simple;
+using Substrate.Gear.Client.NetApi.Model.Types.Base;
+using Substrate.NetApi.Model.Types.Base;
+using Sails.Remoting.Options;
+using Sails.Remoting;
+using Substrate.Gear.Api.Generated;
+using Substrate.Gear.Api.Generated.Model.sp_runtime;
+using Substrate.Gear.Api.Generated.Model.vara_runtime;
+using Substrate.Gear.Client.GearApi.Model.gprimitives;
+using Substrate.Gear.Client.NetApi.Model.Extrinsics;
+using Substrate.Gear.Client.NetApi.Model.Rpc;
+using Substrate.NET.Schnorrkel;
+using Substrate.NetApi.Model.Rpc;
+using Substrate.NetApi.Model.Types;
+using GasUnit = Substrate.NetApi.Model.Types.Primitive.U64;
+using ValueUnit = Substrate.NetApi.Model.Types.Primitive.U128;
+using Sails.Remoting.Abstractions.Core;
+
+
+public class Test : MonoBehaviour
+{
+    private readonly IRemoting remoting;
+
+    public ActorId CreateActorId(byte[] valueBytes)
+    {
+        if (valueBytes == null || valueBytes.Length != 32)
+        {
+            throw new ArgumentException("El array debe contener exactamente 32 bytes.", nameof(valueBytes));
+        }
+        var u8Array = valueBytes.Select(b => new U8(b)).ToArray();
+        return new ActorId
+        {
+            Value = new Substrate.Gear.Api.Generated.Types.Base.Arr32U8 { Value = u8Array }
+        };
+    }
+
+    async void Start()
+    {
+        // Define el remotingFactory
+        Func<Account, IRemoting> remotingFactory = account => new Remoting(account);
+
+        // Crear el proveedor de remoting usando la fábrica
+        var remotingProvider = RemotingProviderFactory.CreateProvider(remotingFactory);
+
+        // Generar cuenta usando una semilla hexadecimal
+        string hexSeed = "0x496f9222372eca011351630ad276c7d44768a593cecea73685299e06acef8c0a";
+        var aliceAccount = AccountService.GenerateAccount(hexSeed);
+
+        if (aliceAccount == null)
+        {
+            Debug.LogError("No se pudo generar la cuenta.");
+            return;
+        }
+        Debug.Log($"Cuenta generada: Dirección = {aliceAccount}");
+
+        // Crear una instancia de remoting
+        var remoting = remotingProvider.CreateRemoting(aliceAccount);
+        if (remoting == null)
+        {
+            Debug.LogError("El cliente de remoting no está inicializado.");
+            return;
+        }
+
+        // Crear el ActorId a partir de la dirección hexadecimal del programa
+        var hexAddress = "0x0096f65717a61bc5ddc6e2467cb83b328e54c87d55d94ba53eaf6f46df66d2f8";
+        var programIdBytes = HexStringToByteArray(hexAddress);
+        var actorId = CreateActorId(programIdBytes);
+
+        if (actorId == null)
+        {
+            Debug.LogError("ActorId no fue generado correctamente.");
+            return;
+        }
+
+        // Crear la acción remota para el contrato PingPong
+        var pingPongAction = new RemotingAction<Str>(remoting, "PingPongProgram", "Ping",  new Str("ping") )
+            .WithGasLimit(new GasUnit(50000)) 
+            .WithValue(new ValueUnit(0));    
+
+        try
+        {
+            var messageReply = await pingPongAction.MessageAsync(actorId, CancellationToken.None);
+            Debug.Log($"Respuesta del contrato: {messageReply}");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Error al enviar el mensaje: {ex.Message}");
+        }
+    }
+
+    private static byte[] HexStringToByteArray(string hex)
+    {
+        if (string.IsNullOrEmpty(hex))
+        {
+            throw new ArgumentException("Hex string cannot be null or empty.");
+        }
+        if (hex.StartsWith("0x")) hex = hex.Substring(2);
+
+        return Enumerable.Range(0, hex.Length / 2)
+            .Select(i => Convert.ToByte(hex.Substring(i * 2, 2), 16))
+            .ToArray();
+    }
+}

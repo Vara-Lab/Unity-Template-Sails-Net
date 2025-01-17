@@ -1,0 +1,253 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Client\\Substrate.Gear.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Api\\Substrate.Gear.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Api\\Substrate.Gear.Api.csproj",
+        "projectName": "Substrate.Gear.Api",
+        "projectPath": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Api\\Substrate.Gear.Api.csproj",
+        "packagesPath": "C:\\Users\\amont\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "C:\\Users\\amont\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.12.9, )",
+              "versionCentrallyManaged": true
+            },
+            "Substrate.NET.API": {
+              "target": "Package",
+              "version": "[0.9.24-rc8, 0.9.24-rc8]",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "coverlet.collector": "6.0.2",
+            "Ensure.That": "10.1.0",
+            "FluentAssertions": "7.0.0",
+            "MessagePack": "2.5.192",
+            "Microsoft.Bcl.AsyncInterfaces": "9.0.0",
+            "Microsoft.CodeAnalysis": "4.12.0",
+            "Microsoft.Extensions.DependencyInjection": "9.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+            "Microsoft.NET.Test.Sdk": "17.12.0",
+            "Nito.AsyncEx": "5.1.2",
+            "NSubstitute": "5.3.0",
+            "NSubstitute.Analyzers.CSharp": "1.0.17",
+            "Polly": "8.5.0",
+            "PolySharp": "1.15.0",
+            "Roslynator.Analyzers": "4.12.9",
+            "Roslynator.Formatting.Analyzers": "4.12.9",
+            "Sails.ClientGenerator": "0.1.0-beta.1",
+            "Sails.Net": "0.1.0-beta.1",
+            "Substrate.NET.API": "[0.9.24-rc8]",
+            "System.Linq.Async": "6.0.1",
+            "System.Net.Http": "4.3.4",
+            "System.Text.Json": "9.0.0",
+            "System.Threading.Channels": "9.0.0",
+            "Testcontainers": "4.0.0",
+            "Verify.SourceGenerators": "2.5.0",
+            "Verify.Xunit": "28.4.0",
+            "xunit": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Client\\Substrate.Gear.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Client\\Substrate.Gear.Client.csproj",
+        "projectName": "Substrate.Gear.Client",
+        "projectPath": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Client\\Substrate.Gear.Client.csproj",
+        "packagesPath": "C:\\Users\\amont\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "C:\\Users\\amont\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Api\\Substrate.Gear.Api.csproj": {
+                "projectPath": "C:\\Users\\amont\\GearFoundation\\Sails-Net\\sails\\net\\src\\Substrate.Gear.Api\\Substrate.Gear.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Ensure.That": {
+              "target": "Package",
+              "version": "[10.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "PolySharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.15.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.12.9, )",
+              "versionCentrallyManaged": true
+            },
+            "Roslynator.Formatting.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.12.9, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[6.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Threading.Channels": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "coverlet.collector": "6.0.2",
+            "Ensure.That": "10.1.0",
+            "FluentAssertions": "7.0.0",
+            "MessagePack": "2.5.192",
+            "Microsoft.Bcl.AsyncInterfaces": "9.0.0",
+            "Microsoft.CodeAnalysis": "4.12.0",
+            "Microsoft.Extensions.DependencyInjection": "9.0.0",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+            "Microsoft.NET.Test.Sdk": "17.12.0",
+            "Nito.AsyncEx": "5.1.2",
+            "NSubstitute": "5.3.0",
+            "NSubstitute.Analyzers.CSharp": "1.0.17",
+            "Polly": "8.5.0",
+            "PolySharp": "1.15.0",
+            "Roslynator.Analyzers": "4.12.9",
+            "Roslynator.Formatting.Analyzers": "4.12.9",
+            "Sails.ClientGenerator": "0.1.0-beta.1",
+            "Sails.Net": "0.1.0-beta.1",
+            "Substrate.NET.API": "[0.9.24-rc8]",
+            "System.Linq.Async": "6.0.1",
+            "System.Net.Http": "4.3.4",
+            "System.Text.Json": "9.0.0",
+            "System.Threading.Channels": "9.0.0",
+            "Testcontainers": "4.0.0",
+            "Verify.SourceGenerators": "2.5.0",
+            "Verify.Xunit": "28.4.0",
+            "xunit": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

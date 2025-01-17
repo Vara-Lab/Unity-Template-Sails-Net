@@ -1,0 +1,14 @@
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\bin\Debug\netstandard2.0\Substrate.Gear.Client.deps.json
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\bin\Debug\netstandard2.0\Substrate.Gear.Client.dll
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\bin\Debug\netstandard2.0\Substrate.Gear.Client.pdb
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\bin\Debug\netstandard2.0\Substrate.Gear.Api.dll
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\bin\Debug\netstandard2.0\Substrate.Gear.Api.pdb
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.csproj.AssemblyReference.cache
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.AssemblyInfoInputs.cache
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.AssemblyInfo.cs
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.csproj.CoreCompileInputs.cache
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.sourcelink.json
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrat.8B77E817.Up2Date
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.dll
+C:\Users\amont\GearFoundation\Sails-Net\sails\net\src\Substrate.Gear.Client\obj\Debug\netstandard2.0\Substrate.Gear.Client.pdb
