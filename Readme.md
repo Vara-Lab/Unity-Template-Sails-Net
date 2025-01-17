@@ -53,9 +53,9 @@ To integrate Sails.Net into your Unity project, follow these steps:
 
 After building the project, copy the dependencies from the following folder:
     
-    ```sh
+
      sails.Net/bin/Debug/netstandard2.0
-    ```
+
 5. Add dependencies to Unity:
 
  Paste the copied dependencies into the Assets/Plugins folder in your Unity project to make them accessible within Unity.
